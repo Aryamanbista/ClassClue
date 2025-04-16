@@ -6,6 +6,7 @@
     <string name="classclue_login">ClassClue Login</string>
     <string name="welcome_admin">Welcome, Admin!</string>
     <string name="welcome_student">Welcome, Student!</string>
+    <string name="select_user_type">Select User Type</string>
     <string-array name="user_types">
         <item>Student</item>
         <item>Admin</item>

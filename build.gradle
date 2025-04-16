@@ -6,7 +6,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath libs.google.services // Check for the latest version
+        classpath libs.google.services
     }
 }
 

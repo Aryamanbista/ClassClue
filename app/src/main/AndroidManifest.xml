@@ -20,5 +20,6 @@
 
         <activity android:name=".AdminDashboard" />
         <activity android:name=".StudentDashboard" />
+        <activity android:name=".SettingsActivity" />
     </application>
 </manifest>
