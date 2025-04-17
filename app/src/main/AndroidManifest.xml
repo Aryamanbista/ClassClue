@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -14,26 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassClue">
-        <activity android:name=".activities.LoginActivity"
+        <activity android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver
-            android:name=".services.AlarmReceiver"
-            android:enabled="true"
-            android:exported="false" />
 
 
-        <activity android:name=".activities.RegistrationActivity" />
-        <activity android:name=".activities.AdminHomeActivity" />
-        <activity android:name=".activities.StudentHomeActivity" />
-        <activity android:name=".activities.SubjectListActivity" />
-        <activity android:name=".activities.AddEditSubjectActivity" />
-        <activity android:name=".activities.EventListActivity" />
-        <activity android:name=".activities.AddEditEventActivity" />
-        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".StudentDashboard" />
     </application>
 </manifest>
