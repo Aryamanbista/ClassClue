@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Reminder Settings">
+
+        <CheckBoxPreference
+            android:key="@string/pref_24h_reminder_key"
+            android:title="24-hour reminder"
+            android:summary="Receive notification 24 hours before event"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="@string/pref_2h_reminder_key"
+            android:title="2-hour reminder"
+            android:summary="Receive notification 2 hours before event"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Alarm Settings">
+
+        <RingtonePreference
+            android:key="@string/pref_alarm_tone_key"
+            android:title="Alarm tone"
+            android:summary="Select alarm tone"
+            android:ringtoneType="alarm"
+            android:showDefault="true"
+            android:showSilent="true"/>
+
+        <ListPreference
+            android:key="@string/pref_alarm_volume_key"
+            android:title="Alarm volume"
+            android:summary="Set alarm volume level"
+            android:entries="@array/volume_levels"
+            android:entryValues="@array/volume_values"
+            android:defaultValue="3"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
